@@ -3,7 +3,7 @@ const httpStatus = require("../utils/httpStatus");
 const AppError = require("../utils/AppError");
 const httpStatusText = require("../utils/httpStatusText");
 const asyncWrapper = require("../middleware/asyncWrapper");
-const bcrypt = require("bcryptjs");
+const bcrypt = require("bcrypt");
 const { validationResult } = require("express-validator");
 const generateJWT = require("../utils/generateJWT");
 
@@ -86,7 +86,6 @@ const loginUser = asyncWrapper(async (req, res) => {
     },
   });
 });
-
 
 module.exports = {
   registerUser,

@@ -1,3 +1,4 @@
+console.log(AppError);
 const httpStatus = require("../utils/httpStatus");
 const httpStatusText = require("../utils/httpStatusText");
 const AppError = require("../utils/AppError");
